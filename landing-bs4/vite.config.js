@@ -1,5 +1,5 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  base: "/landing-bs4/", 
+  base: '/landing-bs4/', 
 });
