@@ -17,6 +17,11 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: landing-bs4
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -26,6 +31,7 @@ jobs:
         with:
           node-version: 20
           cache: npm
+          cache-dependency-path: landing-bs4/package-lock.json
 
       - name: Install
         run: npm ci
@@ -36,7 +42,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
+          path: landing-bs4/dist
 
   deploy:
     needs: build
@@ -44,6 +50,7 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
