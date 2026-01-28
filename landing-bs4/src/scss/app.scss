@@ -482,3 +482,31 @@ ul li::marker {
     width: 100%;
   }
 }
+
+@media (max-width: 575.98px) {
+  h1, h2, h3 {
+    font-size: 80px;
+  }
+  .accent-header {
+    font-size: 100px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  h1, h2, h3 {
+    font-size: 80px;
+  }
+  .accent-header {
+    font-size: 100px;
+  }
+}
+
+@media (max-width: 410px) { 
+  h1, h2, h3 {
+    font-size: 65px;
+  }
+
+  .accent-header {
+    font-size: 80px;
+  }
+} 
