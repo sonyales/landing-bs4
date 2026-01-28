@@ -1,0 +1,28 @@
+// стили текста
+$font-size-base: 1.3rem;
+$headings-font-size: 90px;
+$h1-font-size: $headings-font-size;
+$h2-font-size: $headings-font-size;
+$h3-font-size: $headings-font-size;
+$font-family-base: 'IBM Plex Sans', 'Segoe UI', Arial, sans-serif;
+$headings-font-family: 'BERNIERDistressed-Regular', 
+                    'Impact',
+                    'Haettenschweiler',
+                    'Arial Black';
+
+// базовые размеры
+$header-height: 86px;
+$btn-height: 70px;
+$radius-md: 16px;
+
+//цвета
+$primary: #4f6f8a;
+$black: #000;
+$white: #fff;
+$brand-warm: #D87858;
+$soft-blue: #EDFBFE;
+$ink: #35536b;
+$currency-bg: #f6c28b;
+$headings-color: #d28a63;
+$accent-color: #F88830;
+$line-color: #F4C4AD;

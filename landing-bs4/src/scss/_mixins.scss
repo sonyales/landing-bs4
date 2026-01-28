@@ -1,0 +1,17 @@
+@mixin bg-cover($img: null, $attachment: null) {
+  @if $img { background-image: url(#{$img}); }
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @if $attachment { background-attachment: $attachment; }
+}
+
+@mixin no-focus-ring {
+  &:focus,
+  &.focus,
+  &:active:focus,
+  &:active.focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
